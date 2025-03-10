@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mirco Warnck - Personal Website</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo"><span>Mirco Warnck</span></a>
+        <ul class="nav-links">
+            <li>
+                <a href="#about">Über mich</a>
+            </li>
+            <li>
+                <a href="#experience">Erfahrung</a>
+            </li>
+            <li>
+                <a href="#projects">Projekte</a>
+            </li>
+            <li>
+                <a href="#contact">Kontakt</a>
+            </li>
+        </ul>
+        <button id="menu-icon"><img src="./assets/menu_icon.svg" alt="Menu icon" ></button>
+        <a href="https://www.github.com/mwarnck" target="_blank"><button class="visit-btn">Github Profil</button></a>
+    </header>
+
+    <section id="about" class="about">
+        <div class="about-container">
+            <img src="./assets/Profile_picture.jpg" alt="Profile picture">
+            <div class="info-box">
+                <div class="text">
+                    <h3>Hallo, ich bin</h3>
+                    <h1>Mirco Warnck</h1>
+                    <p>Web Developer</p>
+                </div>
+                <div class="btn-group">
+                    <a href="./assets/Lebenslauf_MircoWarnck.pdf" target="_blank"><button class="btn">CV Download</button></a>
+                    <a href="#contact"><button class="btn">Kontakt</button></a>
+                </div>
+                <div class="socials">
+                    <a href="https://www.github.com/mwarnck" target="_blank"><img src="./assets/github.svg" alt="Github logo"></a>
+                    <a href="https://www.linkedin.com/in/mircowarnck" target="_blank"><img src="./assets/linkedin.svg" alt="LinkedIn logo"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="experience">
+        <h2 class="section-title">Erfahrung</h2>
+        <div class="experience-info">
+            <div class="grid">
+                <div class="grid-card">
+                    <img src="./assets/arthy_logo.svg" alt="Logo arthy">
+                    <p>Junior Web Developer</p>
+                    <h3>2 Jahre - amz.tools GmbH</h3>
+                    <ul>
+                        <li>Entwicklung von Frontend-Komponenten mit TypeScript, React und Next.js</li>
+                        <li>Backend-Entwicklung mit Node.js, MongoDB und mongoose</li>
+                        <li>Arbeiten mit externen API-Schnittstellen, z.B. Amazon Seller API</li>
+                        <li>Erstellen von Unit- und End-to-end-Tests</li>
+                        <li>Arbeiten in einem agilen Umfeld (Scrum)</li>
+                    </ul>
+                </div>
+
+                <div class="grid-card">
+                    <img src="./assets/neuefische_logo.jpg" alt="Logo neue Fische">
+                    <p>Web Development Bootcamp</p>
+                    <h3>3 Monate - Neue Fische</h3>
+                    <ul>
+                        <li>Intensiv-Coding-Bootcamp in Vollzeit</li>
+                        <li>540 Stunden Programmierpraxis (u.a. HTML, CSS, JavaScript)</li>
+                        <li>Eigenentwicklung einer Web App als Abschlussprojekt</li>
+                        <li>Praxis mit dem JavaScript-Framework React</li>
+                        <li>Einsatz weiterer Tools wie Storybook, Git, Styled Components</li>
+                    </ul>
+                </div>
+            </div>
+            <img src="./assets/Profile_picture.jpg" alt="Profile picture">
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2 class="section-title">Projekte</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <img src="./assets/arthy-main-dashboard_slim.png" alt="Arthy Dashboard picture">
+                <h3>ARTHY</h3>
+                <p>Entwicklung innerhalb der Tätigkeit als Junior Web Developer bei amz.tools GmbH.<br /> 
+                    Ein Tool für Amazon-Verkäufer, um die Verkaufsaktivitäten zu tracken, Auswertungen<br /> 
+                    darzustellen oder Handlungsempfehlungen zu erhalten.
+                </p>
+                <div class="btn-group">
+                    <a href="https://app.getarthy.com/auth/login" target="_blank"><button class="btn">Tool Page</button></a>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="./assets/Cocktail_Night.png" alt="Project cocktail nights picture">
+                <h3>Cocktail Night</h3>
+                <p>Abschlussprojekt (Mobile Web App) aus dem Web Development Bootcamp unter Verwendung von React.<br /> 
+                    Der User kann hier nach vorhandenen Rezepten suchen, eigenen Rezepte erstellen<br /> 
+                    oder sich einen zufälligen Cocktail anzeigen lassen.
+                </p>
+                <div class="btn-group">
+                    <a href="https://capstone-project-phi.vercel.app/" target="_blank"><button class="btn">Live Demo</button></a>
+                    <a href="https://github.com/mwarnck/capstone-project" target="_blank"><button class="btn">Github Repo</button></a>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="./assets/online-shop.png" alt="Online shop picture">
+                <h3>Digital Products Store MVP</h3>
+                <p>Ein Online-Shop für digitale Produkte (MVP) als Übungsprojekt. <br /> 
+                    Anbindung von Stripe für den Bezahlvorgang. Speichern der Daten über Prisma. <br /> 
+                    Das Projekt ist mit Next.js, React, TypeScript und Tailwind entwickelt worden. 
+                </p>
+                <div class="btn-group">
+                    <a href="https://github.com/mwarnck/ecommerce-shop" target="_blank"><button class="btn">Github Repo</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2 class="section-title">Kontaktiere mich</h2>
+        <div class="contact-box">
+             <div class="contact-element">
+                <img src="./assets/envelope.svg" alt="">
+                <a href="mailto:mirco.warnck@googlemail.com">mirco.warnck@googlemail.com</a>
+            </div>
+             <div class="contact-element">
+                <img src="./assets/phone.svg" alt="">
+                <p>+49 173 9985701</p>
+             </div>
+        </div>
+    </section>
+
+    <footer>
+        <ul>
+            <li>
+                <a href="#about">Über mich</a>
+            </li>
+            <li>
+                <a href="#experience">Erfahrung</a>
+            </li>
+            <li>
+                <a href="#projects">Projekte</a>
+            </li>
+            <li>
+                <a href="#contact">Kontakt</a>
+            </li>
+        </ul>
+        <p class="copyright">&copy; 2025 | Mirco Warnck</p>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>

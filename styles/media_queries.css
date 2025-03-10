@@ -1,0 +1,98 @@
+@media(max-width: 1280px) {
+    header {
+        padding: 1rem 2rem;
+        gap: 2rem
+    }
+    .section-title {
+        font-size: 3rem;
+    }
+    .about .about-container {
+        gap: 3rem;
+    }
+    .socials {
+        gap: 1.5rem
+    }
+    .experience-info {
+        flex-direction: column;
+    }
+}
+
+@media(max-width: 768px) {
+    header {
+        padding: 1rem 1rem;
+        gap: 1rem;
+    }
+    header .logo {
+        font-size: 1rem;
+    }
+    header .visit-btn {
+        display: none;
+    }
+    .section-title {
+        font-size: 2rem;
+    }
+    .about-container {
+        flex-direction: column;
+    }
+    .socials {
+        gap: 1.0rem
+    }
+    .grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .experience-info img {
+        width: 70vw;
+    }
+}
+
+@media(max-width: 600px) {
+    #menu-icon {
+        display: block;
+    }
+    .section-title {
+        font-size: 2rem;
+    }
+    .nav-links {
+        position: absolute;
+        top: 100%;
+        margin-top: 1rem;
+        width: 100%;
+        padding: 1rem;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        background: rgba(0, 0, 0, 0.9);
+        border-radius: 3rem;
+        display: none
+    }
+    .nav-links li {
+        margin-top: 1.5rem;
+        padding: 1rem;
+    }
+    .nav-links.active {
+        display: block;
+    }
+    header {
+        padding: 1rem 5rem;
+        gap: 8rem;
+    }
+    header .logo {
+        font-size: 1.5rem;
+    }
+    h1 {
+        font-size: 1.0rem;
+    }
+    .about-container img {
+        width: 80vw;
+    }
+    .socials {
+        gap: 0.8rem
+    }
+    .contact-element {
+        font-size: 1.0rem;
+    }
+    footer ul {
+        gap: 1rem;
+    }
+}
